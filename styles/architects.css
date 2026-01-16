@@ -6,6 +6,10 @@
   font-style: normal;
   
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .header-container-bg-light{
     background-color: rgba(255, 144, 14, 0.1);
@@ -21,6 +25,7 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 50px;
     /* padding-top: 50px; */
 }
 .brand{
@@ -70,6 +75,7 @@
     max-width: 862px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 102px;
     margin-bottom: 50px;
 }
 .banner-title{
@@ -90,17 +96,19 @@
 .teams {
     margin-top: 85px;
     align-items: center;
-    /* gap: 73px; */
+    gap: 73px;
+    max-width: 1318px;
 }
 
 .team-image-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 24px;
 }
 .our-features{
-    margin-left: 73px;
-    max-width: 537px;
+    margin-right: 301px;
+    width: 537px;
 
 }
 
@@ -122,15 +130,27 @@
 .our-features .feature-description{
     font-size: 1rem;
     color: #727272;
+    width: 537px;
     line-height: 26px;
     margin-top: 24px;
 }
 /* fact section design */
 
-
+.section-heading{
+    margin-left: 240px;
+}
+.section-description{
+    margin-left: 240px;
+}
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-width: 1340px;
+    margin: 0 290px;
+    margin-top: 100px;
+    justify-content: space-around;
+    column-gap: 125px;
+    
 }
 .fact-card{
     border: 1px solid #FF900E;
@@ -140,6 +160,7 @@
     justify-content:center;
     align-items: center;
     text-align: center;
+    
 }
 .fact-number{
     font-size: 2.8rem;
@@ -164,44 +185,100 @@
     color: #727272;
     max-width: 542px;
     line-height: 26px;
+    margin-top: 24px;
 }
-/* #facts{
-    max-width: 1440;
-    margin: 0 auto;
-    justify-content:center;
-    align-items: center;
-} */
 
 /* Responsive Media Screen for mobile or small device section */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams{
         flex-direction: column;
+    }
+    .brand{
+        margin: 0 auto;
+        margin-left: 125px;
     }
     .nav-links{
         flex-direction: row;
         max-width: 390px;
-        margin-right: 60px; 
-        /* margin: 0 auto; */
+        /* margin-right: px;  */
+        margin: 0 auto;
+        margin-left: 100px;
+        margin-top: 35px;
         /* text-align: center; */
         /* margin-right: 60px; */
+    }
+    .banner-title{
+       
+    font-size: 3rem;
+    font-weight:600;
+    margin-top: -40px;
     }
     
     .team-image-container{
         grid-template-columns: repeat(1,1fr);
     }
     .our-features{
-        margin: 30px 30px;
-        padding: 0 30px;
+        max-width: 385px;
+        margin-right: 80px;
+        margin-left: 98px;
+        /* margin-right: 301px;
+        width: 537px; */
+        /* margin: 30px 30px;
+        .feature-title .feature-description
+        padding: 0 30px; */
+    }
+    .feature-title{
+        /* text-align: center; */
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .feature-description{
+        max-width: 385px;
+        /* font-size: 10px;
+        color: black;
+        width: 250px;
+        line-height: 26px; */
+        
+    }
+    .btn-primary{
+        margin-top: 20px;
     }
     
+    
+    .section-heading{
+        margin-bottom: 24px;
+        margin-left: 145px;
+        margin-top: 70px;
+    }
+    .section-description{
+        line-height: 26px;
+        text-align: start;
+        margin-top: 24px;
+        margin: 0 auto;
+        max-width: 265px;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        max-width: 490px;
+        margin: 0 auto;
+        margin-top: 70px;
+        
+    }
+
 }
+    
+
+
 
 /* Responsive Media Screen for tablet or medium device section */
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 577px) and (max-width: 992px){
     .teams{
         flex-direction: column;
+        gap: 20px;
     }
     .navbar{
         flex-direction: column;
