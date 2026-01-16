@@ -36,16 +36,21 @@
     list-style: none;
       
 }
+.teams{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .btn-primary{
     background-color: #FF900E;
     color: white;
+    font-size: 1.25rem;
+    font-weight:600;
+    width: 180px;
     border: none;
     border-radius: 8px;
     padding: 20px 25px;
+
 }
-/* .nav-links{
-    margin-right: 240px;
-} */
 
 .nav-link{
     text-decoration: none;
@@ -78,21 +83,89 @@
 }
 .banner img{
     width: 100%;
-    /* max-width: 1440px;
-    margin: 0 auto; */
-    /* height: auto; */
-    /* display: block; */
+    margin-bottom: 45px;
     border-radius: 8px;
-    /* margin: 0 auto; */
+}
+
+.teams {
+    margin-top: 85px;
+    align-items: center;
+    /* gap: 73px; */
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
 
 }
 
+
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
+#Quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.Features{
+    color: #FF900E;
+}
+
+.our-features .feature-description{
+    font-size: 1rem;
+    color: #727272;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+/* Responsive Media Screen for mobile or small device section */
+
 @media screen and (max-width: 576px){
-    .navbar, .nav-links{
+    .navbar, .nav-links, .teams{
         flex-direction: column;
     }
     .nav-links{
         flex-direction: row;
-        margin-right: 66px;
+        max-width: 390px;
+        margin-right: 60px; 
+        /* margin: 0 auto; */
+        /* text-align: center; */
+        /* margin-right: 60px; */
     }
+    
+    .team-image-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin: 30px 30px;
+        padding: 0 30px;
+    }
+    
+}
+
+/* Responsive Media Screen for tablet or medium device section */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        margin-right: 60px;
+        /* font-size: 3rem; */
+    }
+    .nav-link{
+    font-size: 32px;
+    }
+    
 }
