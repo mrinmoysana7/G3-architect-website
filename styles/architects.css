@@ -127,6 +127,73 @@
     column-gap: 24px;
     row-gap: 24px;
 }
+
+/* features section related style  */
+.features{
+    gap:146px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.features img{
+    margin-top: 130px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 170px;
+    max-height: 106px;
+}
+
+.section-description{
+    margin-bottom: 30px;
+}
+
+.feature-card{
+    text-align: start;
+    padding: 30px 42px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom:20px;
+    
+    /* margin-bottom: 20px;
+    margin-top: 30px; */
+
+}
+
+
+.feature-box-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    /* margin-bottom: 10px;
+    margin-top: 30px;
+     */
+}
+
+.feature-section-description{
+    line-height: 26px;
+    font-size: 1rem;
+    color: #727272;
+    
+}
+
+.section-title,
+.section-description,
+.feature-card{
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    /* gap: 25px; */
+}
+
+
+
+/* our feature section style  */
 .our-features{
     margin-right: 301px;
     width: 537px;
@@ -157,20 +224,23 @@
 
 
 /* fact section design */
-
-.section-heading{
+.fact-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* .section-heading{
     margin-left: 240px;
 }
 .section-description{
-    margin-left: 240px;
-}
+    margin-left: 240px; */
+
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1340px;
-    margin: 0 290px;
+    margin: 0 auto;
     margin-top: 100px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     column-gap: 125px;
     
 }
@@ -234,17 +304,15 @@
 
 .foot-container{
     background-color:rgba(255, 144, 14, 0.1);
-    /* width: 75%; */
-    max-width: 1440px;
-    border-radius: 8px;;
-    /* justify-items: center; */
+    /* max-width: 1440px; */
+    border-radius: 8px;
     margin: 0 auto;
     margin-top: 130px;
     margin-bottom: 216px;
     height: 100px;
 }
 .foot-box{
-    max-width: 620px;
+    /* max-width: 620px; */
     margin: 0 auto;
 }
 .foot-description{
